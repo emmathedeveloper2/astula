@@ -8,6 +8,7 @@
 @theme {
     --color-primary: #fff;
     --color-base: #111;
+    --color-on-base: #fff;
     --color-secondary: #222;
 
     --font-geist: 'Geist' , sans-serif;
@@ -15,7 +16,7 @@
 
 @layer base {
     body , html {
-        @apply size-full font-geist
+        @apply size-full font-geist bg-base text-on-base
     }
 }
 
