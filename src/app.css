@@ -1,8 +1,26 @@
 @import 'tailwindcss';
 
+@font-face {
+    font-family: 'Geist';
+    src: url('./fonts/Geist.ttf');
+}
 
 @theme {
     --color-primary: #fff;
     --color-base: #111;
     --color-secondary: #222;
+
+    --font-geist: 'Geist' , sans-serif;
+}
+
+@layer base {
+    body , html {
+        @apply size-full font-geist
+    }
+}
+
+@layer utilities {
+    .flex-center {
+        @apply flex items-center justify-center
+    }
 }
