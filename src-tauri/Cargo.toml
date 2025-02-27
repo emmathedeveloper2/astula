@@ -1,6 +1,6 @@
 [package]
 name = "astula"
-version = "0.0.2"
+version = "0.0.1"
 description = "Visually taking the web back to vanilla."
 authors = ["you"]
 edition = "2021"
