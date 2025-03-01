@@ -1,35 +1,3 @@
-<!-- <script lang="ts">
-  import type { RecentProject } from "@types";
-  import { Dialog } from "bits-ui";
-  import type { Snippet } from "svelte";
-
-  type $$Props = {
-	children?: Snippet
-	project: RecentProject
-  }
-
-  let { children , project } : $$Props = $props()
-</script>
- 
-<Dialog.Root>
-	<Dialog.Trigger class="w-full">
-		{@render children?.()}
-	</Dialog.Trigger>
-	<Dialog.Portal>
-		<Dialog.Overlay class="bg-base/10"/>
-		<Dialog.Content>
-			<Dialog.Title>Delete Project</Dialog.Title>
-			<Dialog.Description>
-				Type <span>{project.name}</span> to delete this project.
-			</Dialog.Description>
-			<div class="w-full">
-				<input type="text" placeholder="name" />
-			</div>
-			<Dialog.Close />
-		</Dialog.Content>
-	</Dialog.Portal>
-</Dialog.Root> -->
-
 <script lang="ts">
   import FileHandlerAPI from "@api/file-handler-api";
   import RecentProjectsAPI from "@api/recent-projects-api";
