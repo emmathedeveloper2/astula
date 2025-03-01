@@ -5,18 +5,49 @@
     src: url('./fonts/Geist.ttf');
 }
 
+@font-face {
+    font-family: 'JetBrainsMono';
+    src: url('./fonts/JetBrainsMono.ttf');
+}
+
 @theme {
     --color-primary: #fff;
+    --color-on-primary: #111;
     --color-base: #111;
     --color-on-base: #fff;
     --color-secondary: #222;
+    --color-on-secondary: #fff;
 
     --font-geist: 'Geist' , sans-serif;
+    --font-jetbrains: 'JetBrainsMono' , sans-serif;
 }
 
 @layer base {
     body , html {
-        @apply size-full font-geist bg-base text-on-base
+        @apply size-full font-jetbrains bg-base text-on-base text-[14px]
+    }
+
+    ::-webkit-scrollbar{
+        @apply hidden
+    }
+
+    button {
+        cursor: pointer;
+    }
+}
+
+@layer components {
+    .btn {
+        @apply px-4 py-1 rounded disabled:opacity-50
+    }
+    .btn-primary {
+        @apply bg-primary text-on-primary
+    }
+    .btn-secondary {
+        @apply bg-secondary text-on-secondary
+    }
+    input {
+        @apply w-full bg-secondary rounded p-1 outline-1 focus:outline-primary
     }
 }
 

@@ -10,9 +10,13 @@ const config = {
   kit: {
     adapter: adapter(),
     alias: {
-      '@lib/*' : './src/lib/*',
-      '@components/*' : './src/components/*',
-      '@state' : './src/state/index.ts'
+      '@lib/*': './src/lib/*',
+      '@components/*': './src/components/*',
+      '@state': './src/state/index.ts',
+      '@types': './src/types/index.ts',
+      '@db': './src/db/index.ts',
+      '@templates': './src/templates/index.ts',
+      '@api': './src/api/*',
     }
   },
 };

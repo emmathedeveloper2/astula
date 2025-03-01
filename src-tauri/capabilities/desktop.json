@@ -13,6 +13,11 @@
     "dialog:allow-ask",
     "dialog:allow-message",
     "updater:allow-check",
-    "updater:allow-download-and-install"
+    "updater:allow-download-and-install",
+    "fs:default",
+    "fs:allow-desktop-read-recursive",
+    "fs:allow-desktop-write-recursive",
+    "fs:allow-desktop-meta-recursive",
+    "fs:scope-desktop-recursive"
   ]
 }

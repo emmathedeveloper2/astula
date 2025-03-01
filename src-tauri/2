@@ -1,7 +1,7 @@
 
-added 1 package, and audited 72 packages in 9s
+added 1 package, changed 13 packages, and audited 86 packages in 60s
 
-10 packages are looking for funding
+13 packages are looking for funding
   run `npm fund` for details
 
 3 low severity vulnerabilities

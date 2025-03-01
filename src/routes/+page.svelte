@@ -1,7 +1,9 @@
-<script lang="ts">
-    
-</script>
+<script>
+  import RecentProjectsArea from "@components/recent-projects-area.svelte";
+  import WelcomeScreenHeader from "@components/welcome-screen-header.svelte";
 
-<div class="size-full flex-center flex-col gap-4">
-    <h1 class="text-5xl">Astula</h1>
+</script>
+<div class="size-full flex">
+    <WelcomeScreenHeader />
+    <RecentProjectsArea />
 </div>
